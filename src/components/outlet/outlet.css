@@ -1,0 +1,254 @@
+.wrapper{
+    width: 100%;
+}
+.wrapper h3{
+    color: #999;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEDF3;
+    border-radius: 6px;
+    border-radius: 10px;
+    padding: 25px 10px;
+}
+
+.top{
+    background-image: url(../../assets/Path\ 3.1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    width: 100%; 
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.top div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top h1, .top h2{
+    margin: 0;
+}
+.top span{
+    margin-left: 20px;
+}
+.top h2{
+    font-weight: normal;
+    color: #4E5353;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* action */
+.action{
+    width: 100%;
+    margin-top: 40px;
+}
+.action-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.container-form{
+    background-color: #FFE6D1;
+    border-radius: 10px;
+    padding: 25px 18px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.left{
+    display: flex;
+}
+.right{
+    transform: translateY(20px);
+}
+.form-svg{
+    border-radius: 4px;
+    background-color: #FFBB82;
+    padding:14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    margin-left: 10px;
+}
+.content h3, .content p{
+    margin: 0;
+}
+.content h3{
+ color: #000;
+ font-weight: normal;
+} 
+.content p{
+    font-size: 14px;
+    font-weight: lighter;
+}
+.center-wrapper{
+     background-color: #E9F4FA;
+    border-radius: 10px;
+    padding: 25px 18px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.center-svg{
+    border-radius: 4px;
+    background-color: #B9D3D3;
+    padding:14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dispatch-wrapper{
+    background-color: #FFE3E0;
+    border-radius: 10px;
+    padding: 25px 18px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.dispatch-svg{
+    border-radius: 4px;
+    background-color: #F5BEC8;
+    padding:14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity{
+    margin-top: 50px;
+}
+table{
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #E5E8ED;
+    padding: 10px 12px;
+}
+
+th {
+    font-weight: 400;
+    text-align: left;
+}
+td{
+    color: #555555;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+tbody tr td{
+    padding: 18px 8px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #E5E8ED;
+}
+tbody tr td span{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ECF0F6;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.event{
+    color:  #53BED2;
+}
+
+button{
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px 16px;
+    cursor: pointer;
+    border: 1px solid #53BED2;
+}
+button:hover{
+    background-color: #53BED2;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+}
+@media screen and (min-width:768px) {
+    .wrapper{
+    width: 75%;
+}
+
+.container{
+    flex-direction: row;
+    padding: 45px 30px;
+    width: 75%;
+}
+
+.top{
+    background-size: 60%;
+    margin-bottom: 0px;
+    width: calc(75% / 3);
+     text-align: left;
+    
+}
+
+.first, .sec{
+    padding-right: 80px;
+    margin-right: 40px;
+    border-right: 1px solid #E7EDF6;
+}
+
+.top div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.top h1, .top h2{
+    margin: 0;
+}
+.top span{
+    margin-left: 20px;
+}
+.top h2{
+    font-weight: normal;
+    color: #4E5353;
+    font-size: 16px;
+}
+.action-wrapper{
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-form{
+    width: calc(85% / 3);
+}
+.center-wrapper{
+    width: calc(85% / 3);
+}
+.dispatch-wrapper{
+    width: calc(85% / 3);
+}
+button{
+    width: 20%;
+}
+}
