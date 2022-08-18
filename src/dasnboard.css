@@ -1,0 +1,16 @@
+.dashboard {
+   /* width: 100%; */
+    background-color: #FAFAFE;
+    font-family: Poppins;
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin: 0,
+}
+
+@media screen and (min-width:768px) {
+    /* .dashboard{
+        flex-direction: row;
+    } */
+}

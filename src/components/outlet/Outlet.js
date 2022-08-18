@@ -3,13 +3,24 @@ import Topbar from "../topbar/Topbar";
 import "./outlet.css"
 import { activityData } from "../../tableData";
 
-const Outlet = () => {
+const Outlet = ({revealSidebar}) => {
   const [end, setEnd] = useState(8);
   const handleShowMore = () => {
-    setEnd(activityData.length);
+    if(end !== activityData.length){
+      setEnd(activityData.length);
+    } else{
+      setEnd(8);
+    }
   }
   return (
     <div className="wrapper">
+         <span id="hamburger" onClick={revealSidebar}>
+          <svg width="35" height="35" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 16.6667V11.6667" stroke="#5D6C76" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M15 16.6666V8.33331" stroke="#5D6C76" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M10 16.6666V3.33331" stroke="#5D6C76" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </span>
         <Topbar />
         <section className="overview">
           <h3>Overview</h3>
@@ -126,7 +137,7 @@ const Outlet = () => {
                     <span>
                       SC
                     </span>
-                    {data.user}
+                    <p>{data.user}</p>
                   </td>
                   <td className="event">{data.event}</td>
                   <td>{data.date}</td>
@@ -135,7 +146,9 @@ const Outlet = () => {
             }
             </tbody>
           </table>
-          <button onClick={handleShowMore}>View more activity</button>
+          <button onClick={handleShowMore}>
+            {end === activityData.length ? "See less activity" : "View more activity"}
+          </button>
         </section>
     </div>
   )
